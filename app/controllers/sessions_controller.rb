@@ -21,6 +21,7 @@ class SessionsController < ApplicationController
     end
 
     def logged_in
+        # debugger
         if @current_user
             render json: {
                 logged_in: true,
